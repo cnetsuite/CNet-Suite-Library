@@ -1,0 +1,13 @@
+Welcome to CNetFTPSServer!
+
+This is a sample explicit-FTPS (FTP over TLS) server built entirely on the
+CNet library. Everything you see under this folder is served from
+data\CNetFTPSServer\ftproot, the server's virtual root ("/").
+
+Try:
+  CWD notes
+  LIST
+  RETR todo.txt
+  CDUP
+
+See readme.txt in samples\CNetFTPSServer for connection instructions.

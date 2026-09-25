@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CNetWebServer</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>CNetWebServer</h1>
+    <p>A small HTTP/HTTPS web server built entirely on the CNet library: sockets, TLS, threads, and SQLite.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Server time</h2>
+      <p id="server-time">Loading&hellip;</p>
+    </section>
+
+    <section class="card">
+      <h2>Hit counter</h2>
+      <p>This page has been requested <strong id="hit-count">&hellip;</strong> times.</p>
+    </section>
+
+    <section class="card">
+      <h2>Guestbook</h2>
+      <form id="guestbook-form">
+        <input type="text" id="guestbook-name" placeholder="Your name" maxlength="200" required>
+        <textarea id="guestbook-message" placeholder="Leave a message" maxlength="1000" required></textarea>
+        <button type="submit">Sign the guestbook</button>
+      </form>
+      <p id="guestbook-error" class="error" hidden></p>
+      <ul id="guestbook-entries"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Served over plain HTTP and self-signed HTTPS from the same CNet-based server. See <code>readme.txt</code> for details.</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

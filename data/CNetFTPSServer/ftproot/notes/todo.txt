@@ -1,0 +1,6 @@
+TODO
+====
+- Write the quarterly report
+- Review pull requests
+- Renew the TLS certificate reminder
+- Reply to the FTP client compatibility thread

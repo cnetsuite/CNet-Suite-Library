@@ -1,0 +1,6 @@
+IDEAS
+=====
+- Add IPv6 support to the passive-mode listener
+- Support resumable transfers (REST) once streaming file I/O exists
+- Add per-user virtual roots
+- Add an --anonymous flag for read-only public access

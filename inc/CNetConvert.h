@@ -10,8 +10,7 @@
  * Converts a NUL-terminated UTF-8 string to a NUL-terminated wide string,
  * for use with Win32 wide-character APIs — UTF-16 on Windows (via
  * MultiByteToWideChar), UTF-32 on Linux/macOS (via this module's own
- * convertUtf8ToUtf32(), since wchar_t is natively UTF-32 there — see
- * CLAUDE.md's String model entry).
+ * convertUtf8ToUtf32(), since wchar_t is natively UTF-32 there
  *
  * @param gc Allocator the result is allocated from; caller owns gc.
  * @param utf8 NUL-terminated UTF-8 text; borrowed, not stored.
@@ -282,8 +281,8 @@ CNET_API int convertWideStringToBool(const wchar_t* text, int* outValue);
 
 /**
  * Correctly-typed wrapper for the C library's strlen. Kept as the
- * conventional way to call this function in samples/CNetTests code
- * (see CLAUDE.md), independent of any particular header's include path.
+ * conventional way to call this function in samples/CNetTests code,
+ * independent of any particular header's include path.
  *
  * @param text NUL-terminated narrow string; borrowed, must not be NULL.
  * @return Number of characters before the terminating NUL.
